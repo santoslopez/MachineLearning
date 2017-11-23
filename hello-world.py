@@ -16,12 +16,12 @@ import sklearn import tree
 
 #labels = ["apple","apple","orange","orange"]
 
-features = [[140,1],[130,1],[150,0],[170,0]]
+features = [[140,1],[130,1],[150,0],[170,0]] #nuestra variable features contiene las primeras 2 columnas
 
-labels = [0,0,1,1]
+labels = [0,0,1,1] #nuestra variable labels contiene la ultima columna
 
 clf = tree.DecisionTreeClassifier()
 
-clf = clf.fit(features,labels)
+clf = clf.fit(features,labels) #find patterns in date se refiere a fit
 
 print clf.predict([[]])
